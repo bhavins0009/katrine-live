@@ -4,7 +4,15 @@
 
 <div id="main" class="main">
 
-	<?php get_template_part( 'template-parts/element', 'customhome' ); ?>
+	<?php 
+		$pagename = get_query_var('pagename');  
+		if('motion' == $pagename){
+			get_template_part( 'template-parts/element', 'mostion' ); 
+		} else {
+			get_template_part( 'template-parts/element', 'customhome' ); 		
+		}
+		
+	?>
 
 	<?php /*	
 	<div class="container">

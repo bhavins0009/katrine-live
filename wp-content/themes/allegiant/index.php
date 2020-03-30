@@ -2,12 +2,14 @@
 
 <?php get_template_part( 'template-parts/element', 'page-header' ); ?>
 
+
 <?php if ( cpotheme_show_posts() ) : ?>
 <div id="main" class="main">
 
 	<?php if ( is_front_page() ) : ?>
 		<?php get_template_part( 'template-parts/element', 'customhome' ); ?>
 	<?php else: ?>	
+
 		<div class="container">		
 			<section id="content" class="content">
 				<?php do_action( 'cpotheme_before_content' ); ?>
